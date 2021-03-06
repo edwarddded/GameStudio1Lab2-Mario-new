@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 1723847736625853595}
   - component: {fileID: 4184856354331588693}
   - component: {fileID: 7409110843052037731}
+  - component: {fileID: 7397759864507656614}
+  - component: {fileID: 5001594879580824830}
   m_Layer: 0
   m_Name: enemies_2
   m_TagString: Untagged
@@ -97,3 +99,38 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PositionMax: 0
   PositionMin: 0
+--- !u!70 &7397759864507656614
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5592461494427997580}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 0.16, y: 0.23}
+  m_Direction: 0
+--- !u!95 &5001594879580824830
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5592461494427997580}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d54e9034fdf83e843bc18d6aae84956e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
