@@ -9,24 +9,37 @@ public class MarioMovement : MonoBehaviour
     private bool facingRight = false;
     public int playerJumpPower = 1250;
     private float moveX;
+    private Animator anim;
    
 
     // Update is called once per frame
     void Update()
     {
-        movePlayer(); 
+        movePlayer();
+        anim = GetComponent<Animator>();
     }
 
     private void movePlayer()
     {
         if (Input.GetButtonDown("Jump")){
             Jump();
+          
         }
 
         moveX = Input.GetAxis("Horizontal");
+        if (moveX == 0)
+        {
+            anim.SetBool("isRunning", false);
+        }
+        else
+        {
+            anim.SetBool("isRunning", true);
+        }
+
         if (moveX < 0.0f && facingRight == false)
         {
             FlipPlayer();
+
         }
 
         else if( moveX > 0.0f && facingRight == true)
@@ -35,6 +48,7 @@ public class MarioMovement : MonoBehaviour
         }
         gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(moveX * playerSpeed, gameObject.GetComponent<Rigidbody2D>().velocity.y);
     }
+    
 
     private void FlipPlayer()
     {
