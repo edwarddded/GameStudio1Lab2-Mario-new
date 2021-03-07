@@ -48,3 +48,6 @@ TagManager:
   - name: pipe
     uniqueID: 2758593469
     locked: 0
+  - name: player
+    uniqueID: 2535383425
+    locked: 0
