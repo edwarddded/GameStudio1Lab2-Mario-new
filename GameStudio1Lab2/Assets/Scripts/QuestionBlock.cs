@@ -7,6 +7,7 @@ public class QuestionBlock : MonoBehaviour
     public GameObject questionBlock;
     public GameObject emptyBlock;
     public GameObject itemPickup;
+    public AudioClip sfx;
 
     private void OnTriggerEnter2D(Collider2D player)
     {
@@ -16,11 +17,13 @@ public class QuestionBlock : MonoBehaviour
 
             if (itemPickup.tag == "Mushroom") 
             {
+                AudioSource.PlayClipAtPoint(sfx, transform.position, 1.0f);
                 Debug.Log("Item Spawned");
                 Instantiate(itemPickup, transform.position + new Vector3(0f, 0.15f, 0f), transform.rotation);
             }
             if (itemPickup.tag == "Star")
             {
+                AudioSource.PlayClipAtPoint(sfx, transform.position, 1.0f);
                 Debug.Log("Item Spawned");
                 Instantiate(itemPickup, transform.position + new Vector3(0f, 0.15f, 0f), transform.rotation);
             }
