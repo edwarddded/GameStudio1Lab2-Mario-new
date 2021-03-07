@@ -4,9 +4,8 @@ using UnityEngine;
 
 public class MushroomMovement : MonoBehaviour
 {   
-    public float speed = 5f;
-    public float PositionMax;
-    public float PositionMin;
+    float speed = 1f;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -17,15 +16,6 @@ public class MushroomMovement : MonoBehaviour
     void Update()
     {
         transform.position += Vector3.right * speed * Time.deltaTime;
-        if (transform.position.x >= PositionMax)
-        {
-            speed = -speed;
-
-        }
-        else if (transform.position.x <= PositionMin)
-        {
-            speed = -speed;
-
-        }
+       
     }
 }
