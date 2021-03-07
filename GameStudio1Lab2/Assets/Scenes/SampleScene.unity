@@ -1300,13 +1300,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 519420028}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 80905870e0ffc47278dd094912907de4, type: 3}
+  m_Script: {fileID: 11500000, guid: 893e379494f141d41875395649433d84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xMin: -100
-  xMax: 100
-  yMin: 0
-  yMax: 0
+  followObject: {fileID: 1851954450}
+  followOffset: {x: 0.96, y: 0.01}
+  speed: 3
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -1593,6 +1592,55 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ad41e2813bf7d64d97ee9ddde5b465a, type: 3}
+--- !u!1 &812148619
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 812148621}
+  - component: {fileID: 812148620}
+  m_Layer: 0
+  m_Name: Black
+  m_TagString: Black
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!68 &812148620
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 812148619}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.5, y: 0}
+  - {x: 4.506682, y: 0}
+--- !u!4 &812148621
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 812148619}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.79, y: -1.32, z: -4.1311426}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &825159998 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4165777841917011728, guid: f05b20d0245198f4395849b7b5ff7099,
@@ -20057,6 +20105,12 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &1851954450 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5994827855831439363, guid: cd08e25ae01fb744bac29bcb5db35762,
+    type: 3}
+  m_PrefabInstance: {fileID: 1169623611}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1884727789 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4165777841917011728, guid: f05b20d0245198f4395849b7b5ff7099,
