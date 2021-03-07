@@ -9,6 +9,7 @@ TagManager:
   - Coin
   - Mushroom
   - Ground
+  - Star
   layers:
   - Default
   - TransparentFX

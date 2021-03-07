@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class enemiesmovement : MonoBehaviour
 {   
-     float speed = 5f;
-    public float PositionMax;
+    float speed = 1f;
     public float PositionMin;
+    public float PositionMax;
+    SpriteRenderer sr;
     // Start is called before the first frame update
     void Start()
     {
-        
+        sr = gameObject.GetComponent<SpriteRenderer>();
     }
-
     // Update is called once per frame
     void Update()
     {
@@ -20,12 +20,12 @@ public class enemiesmovement : MonoBehaviour
         if (transform.position.x >= PositionMax)
         {
             speed = -speed;
-
+            sr.flipX = true;
         }
         else if (transform.position.x <= PositionMin)
         {
             speed = -speed;
-
+            sr.flipX = false;
         }
     }
 }

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3037350429201238683}
   - component: {fileID: 4957492624713976890}
   - component: {fileID: 261475978464266799}
+  - component: {fileID: 8797844173971908354}
   m_Layer: 0
   m_Name: Red Mushroom
   m_TagString: Mushroom
@@ -97,7 +98,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de1ec099c5208a840b0c3224ce6ea241, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
 --- !u!70 &4957492624713976890
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -126,3 +126,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d58322e4f7c85e34384a12f4823065f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!50 &8797844173971908354
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 189301507238408485}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4

@@ -97,8 +97,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dda0abd17a0923a47b63632f4ba1791c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PositionMax: 5
-  PositionMin: 0
+  speed: 5
+  groundDetection: {fileID: 0}
+  distance: 0
 --- !u!95 &5982859035822087838
 Animator:
   serializedVersion: 3
