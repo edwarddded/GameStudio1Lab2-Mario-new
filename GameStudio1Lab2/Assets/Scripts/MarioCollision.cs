@@ -35,7 +35,7 @@ public class MarioCollision : MonoBehaviour
         if (other.gameObject.tag == "Star")
         {
             Destroy(other.gameObject);
-            sr.color = new Color(1,0,0,1);
+            sr.color = new Color(1, 0, 0, 1);
             Debug.Log(other.name);
         }
         if (other.gameObject.tag == "Mushroom")
@@ -48,12 +48,16 @@ public class MarioCollision : MonoBehaviour
         {
             health--;
             healthText.text = "Health X" + health.ToString();
-            if (health ==0)
+            if (health == 0)
             {
                 SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             }
-            
+
             Debug.Log(other.name);
+        }
+        if (other.gameObject.tag == "Black")
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
 }
