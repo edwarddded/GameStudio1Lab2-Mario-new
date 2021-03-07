@@ -48,12 +48,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: ground
-    uniqueID: 1344648799
-    locked: 0
   - name: pipe
     uniqueID: 2758593469
     locked: 0
+  - name: ground
+    uniqueID: 1344648799
+    locked: 0
   - name: player
     uniqueID: 2535383425
+    locked: 0
+  - name: coins
+    uniqueID: 2422526099
     locked: 0
