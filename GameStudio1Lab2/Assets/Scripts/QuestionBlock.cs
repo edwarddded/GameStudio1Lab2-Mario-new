@@ -19,6 +19,16 @@ public class QuestionBlock : MonoBehaviour
                 Debug.Log("Item Spawned");
                 Instantiate(itemPickup, transform.position + new Vector3(0f, 0.15f, 0f), transform.rotation);
             }
+            if (itemPickup.tag == "Star")
+            {
+                Debug.Log("Item Spawned");
+                Instantiate(itemPickup, transform.position + new Vector3(0f, 0.15f, 0f), transform.rotation);
+            }
+            if (itemPickup.tag == "Coin")
+            {
+                Debug.Log("Item Spawned");
+                Instantiate(itemPickup, transform.position + new Vector3(0f, 0.15f, 0f), transform.rotation);
+            }
 
             Instantiate(emptyBlock, transform.position, transform.rotation);
             Destroy(gameObject);
