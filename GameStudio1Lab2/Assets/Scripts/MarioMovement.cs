@@ -5,47 +5,32 @@ using UnityEngine;
 
 public class MarioMovement : MonoBehaviour
 {
-    public int playerSpeed = 2;
-    private bool facingRight = false;
-    public int playerJumpPower = 1250;
-    private float moveX;
-   
+    public float JumpForce = 5f;
+    public float moveSpeed = 5f;
+    //public bool isGrounded = false;
+    private Rigidbody2D rb;
 
-    // Update is called once per frame
+    private void Start()
+    {
+        rb = GetComponent<Rigidbody2D>();
+    }
     void Update()
     {
-        movePlayer(); 
-    }
+        var movement = Input.GetAxis("Horizontal");
+        transform.position += new Vector3(movement, 0f, 0f) * Time.deltaTime * moveSpeed;
 
-    private void movePlayer()
-    {
-        if (Input.GetButtonDown("Jump")){
-            Jump();
-        }
+        if (!Mathf.Approximately(0, movement))
+            transform.rotation = movement < 0 ? Quaternion.Euler(0, 180, 0) : Quaternion.identity;
 
-        moveX = Input.GetAxis("Horizontal");
-        if (moveX < 0.0f && facingRight == false)
+        if (Input.GetButtonDown("Jump") && Mathf.Abs(rb.velocity.y)<0.001f)
         {
-            FlipPlayer();
+            rb.AddForce(new Vector2(0, JumpForce), ForceMode2D.Impulse);
         }
+        
 
-        else if( moveX > 0.0f && facingRight == true)
-        {
-            FlipPlayer();
-        }
-        gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(moveX * playerSpeed, gameObject.GetComponent<Rigidbody2D>().velocity.y);
+        
     }
+    
 
-    private void FlipPlayer()
-    {
-        facingRight = !facingRight;
-        Vector2 localScale = gameObject.transform.localScale;
-        localScale.x *= -1;
-        transform.localScale = localScale;
-    }
-
-    void Jump()
-    {
-        GetComponent<Rigidbody2D>().AddForce(Vector2.up * playerJumpPower);
-    }
+   
 }
