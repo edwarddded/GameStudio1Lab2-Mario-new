@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class MarioCollision : MonoBehaviour
 {
@@ -9,8 +10,12 @@ public class MarioCollision : MonoBehaviour
 
     SpriteRenderer sr;
 
+    float health = 3;
+    public Text healthText;
+
+    public Text CoinText;
     float value = 200;
-    float score = 0;
+    float Coinscore = 0;
     private void Start()
     {
         scaleChange = new Vector3(1.5f, 2f, 2f);
@@ -21,8 +26,10 @@ public class MarioCollision : MonoBehaviour
         if (other.gameObject.tag == "Coin")
         {
             Destroy(other.gameObject);
-            score += value;
-            Debug.Log(score);
+            Coinscore += value;
+
+            CoinText.text = "Coin Score:" + Coinscore.ToString();
+            Debug.Log(Coinscore);
             Debug.Log(other.name);
         }
         if (other.gameObject.tag == "Star")
@@ -39,7 +46,13 @@ public class MarioCollision : MonoBehaviour
         }
         if (other.gameObject.tag == "Enemy")
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            health--;
+            healthText.text = "Health X" + health.ToString();
+            if (health ==0)
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            }
+            
             Debug.Log(other.name);
         }
     }
