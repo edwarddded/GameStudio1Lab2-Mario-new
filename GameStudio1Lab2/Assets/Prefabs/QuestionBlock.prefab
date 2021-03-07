@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 640366478419650005}
   - component: {fileID: 640366478419650004}
   - component: {fileID: 640366478419650010}
+  - component: {fileID: 74445582037235130}
   m_Layer: 0
   m_Name: QuestionBlock
   m_TagString: Untagged
@@ -110,6 +111,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.16, y: 0.16}
   m_EdgeRadius: 0
+--- !u!95 &74445582037235130
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 640366478419650006}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6c94e409d6c6042f9b35a5d913c90ed2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &640366478667230658
 GameObject:
   m_ObjectHideFlags: 0
