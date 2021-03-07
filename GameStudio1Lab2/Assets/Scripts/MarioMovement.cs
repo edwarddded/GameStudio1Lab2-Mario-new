@@ -43,6 +43,7 @@ public class MarioMovement : MonoBehaviour
         else if(rb.velocity.y > 0.001f)
         {
             anim.SetBool("isJumping", true);
+            anim.SetBool("isRunning", false);
         }
         
         
