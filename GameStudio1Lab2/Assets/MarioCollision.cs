@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MarioCollision : MonoBehaviour
 {
@@ -38,7 +39,7 @@ public class MarioCollision : MonoBehaviour
         }
         if (other.gameObject.tag == "Enemy")
         {
-            
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             Debug.Log(other.name);
         }
     }
