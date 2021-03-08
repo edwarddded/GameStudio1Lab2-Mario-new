@@ -61,7 +61,7 @@ public class MarioCollision : MonoBehaviour
             healthText.text = "Health X" + health.ToString();
             if (health == 0)
             {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+                SceneManager.LoadScene(2);
             }
 
             Debug.Log(other.name);
@@ -71,6 +71,10 @@ public class MarioCollision : MonoBehaviour
         if (other.gameObject.tag == "Black")
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+        if (other.gameObject.tag == "Win")
+        {
+            SceneManager.LoadScene(3);
         }
     }
 }

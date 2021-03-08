@@ -1631,8 +1631,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
@@ -1650,8 +1650,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
@@ -1678,7 +1678,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 656931, guid: 4789d9e281c4f544494cb5ac069d3567, type: 3}
       propertyPath: itemPickup
-      value: 
+      value:
       objectReference: {fileID: 918850741996436284, guid: f05b20d0245198f4395849b7b5ff7099,
         type: 3}
     - target: {fileID: 640366478419650005, guid: 4789d9e281c4f544494cb5ac069d3567,
@@ -1855,8 +1855,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 893e379494f141d41875395649433d84, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   followObject: {fileID: 1851954450}
   followOffset: {x: 0.96, y: 0.16}
   speed: 3
@@ -2519,8 +2519,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   m_IgnoreReversedGraphics: 1
   m_BlockingObjects: 0
   m_BlockingMask:
@@ -2536,8 +2536,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   m_UiScaleMode: 0
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
@@ -2958,7 +2958,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 656931, guid: 4789d9e281c4f544494cb5ac069d3567, type: 3}
       propertyPath: itemPickup
-      value: 
+      value:
       objectReference: {fileID: 189301507238408485, guid: cbfa0c2f29c92494a9f803b5b005ca91,
         type: 3}
     - target: {fileID: 640366478419650005, guid: 4789d9e281c4f544494cb5ac069d3567,
@@ -3032,7 +3032,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 656931, guid: 4789d9e281c4f544494cb5ac069d3567, type: 3}
       propertyPath: itemPickup
-      value: 
+      value:
       objectReference: {fileID: 6850866863071888260, guid: 35684e7e4008ba74bbb31f61a18eedcf,
         type: 3}
     - target: {fileID: 640366478419650005, guid: 4789d9e281c4f544494cb5ac069d3567,
@@ -3144,8 +3144,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   m_Material: {fileID: 0}
   m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_RaycastTarget: 1
@@ -3184,11 +3184,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 656931, guid: 4789d9e281c4f544494cb5ac069d3567, type: 3}
       propertyPath: sfx
-      value: 
+      value:
       objectReference: {fileID: 8300000, guid: 2a9a46eb6cecb2a42bbc8f0fcd51100f, type: 3}
     - target: {fileID: 656931, guid: 4789d9e281c4f544494cb5ac069d3567, type: 3}
       propertyPath: itemPickup
-      value: 
+      value:
       objectReference: {fileID: 6850866863071888260, guid: 35684e7e4008ba74bbb31f61a18eedcf,
         type: 3}
     - target: {fileID: 640366478419650005, guid: 4789d9e281c4f544494cb5ac069d3567,
@@ -3499,42 +3499,42 @@ PrefabInstance:
     - target: {fileID: 9016717834437934535, guid: cd08e25ae01fb744bac29bcb5db35762,
         type: 3}
       propertyPath: Coin
-      value: 
+      value:
       objectReference: {fileID: 8300000, guid: 2c959a5b3f796a048aca93b3f05213f8, type: 3}
     - target: {fileID: 9016717834437934535, guid: cd08e25ae01fb744bac29bcb5db35762,
         type: 3}
       propertyPath: Star
-      value: 
+      value:
       objectReference: {fileID: 8300000, guid: 2a9a46eb6cecb2a42bbc8f0fcd51100f, type: 3}
     - target: {fileID: 9016717834437934535, guid: cd08e25ae01fb744bac29bcb5db35762,
         type: 3}
       propertyPath: CoinPlay
-      value: 
+      value:
       objectReference: {fileID: 1296685908}
     - target: {fileID: 9016717834437934535, guid: cd08e25ae01fb744bac29bcb5db35762,
         type: 3}
       propertyPath: CoinText
-      value: 
+      value:
       objectReference: {fileID: 1569624295}
     - target: {fileID: 9016717834437934535, guid: cd08e25ae01fb744bac29bcb5db35762,
         type: 3}
       propertyPath: Mushroom
-      value: 
+      value:
       objectReference: {fileID: 8300000, guid: 2a9a46eb6cecb2a42bbc8f0fcd51100f, type: 3}
     - target: {fileID: 9016717834437934535, guid: cd08e25ae01fb744bac29bcb5db35762,
         type: 3}
       propertyPath: StarPlay
-      value: 
+      value:
       objectReference: {fileID: 0}
     - target: {fileID: 9016717834437934535, guid: cd08e25ae01fb744bac29bcb5db35762,
         type: 3}
       propertyPath: healthText
-      value: 
+      value:
       objectReference: {fileID: 882148336}
     - target: {fileID: 9016717834437934535, guid: cd08e25ae01fb744bac29bcb5db35762,
         type: 3}
       propertyPath: MushroomPlay
-      value: 
+      value:
       objectReference: {fileID: 287026522}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd08e25ae01fb744bac29bcb5db35762, type: 3}
@@ -3950,8 +3950,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   m_Material: {fileID: 0}
   m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_RaycastTarget: 1
@@ -3996,11 +3996,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 656931, guid: 4789d9e281c4f544494cb5ac069d3567, type: 3}
       propertyPath: sfx
-      value: 
+      value:
       objectReference: {fileID: 8300000, guid: 2a9a46eb6cecb2a42bbc8f0fcd51100f, type: 3}
     - target: {fileID: 656931, guid: 4789d9e281c4f544494cb5ac069d3567, type: 3}
       propertyPath: itemPickup
-      value: 
+      value:
       objectReference: {fileID: 918850741996436284, guid: f05b20d0245198f4395849b7b5ff7099,
         type: 3}
     - target: {fileID: 640366478419650005, guid: 4789d9e281c4f544494cb5ac069d3567,
@@ -4196,7 +4196,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 656931, guid: 4789d9e281c4f544494cb5ac069d3567, type: 3}
       propertyPath: itemPickup
-      value: 
+      value:
       objectReference: {fileID: 918850741996436284, guid: f05b20d0245198f4395849b7b5ff7099,
         type: 3}
     - target: {fileID: 640366478419650005, guid: 4789d9e281c4f544494cb5ac069d3567,
@@ -28828,3 +28828,47 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f05b20d0245198f4395849b7b5ff7099, type: 3}
+--- !u!1 &2107205591
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2107205592}
+  - component: {fileID: 2107205593}
+  m_Layer: 0
+  m_Name: Win
+  m_TagString: Win
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2107205592
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2107205591}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 22.595995, y: -0.5528193, z: -10.718934}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &2107205593
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2107205591}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.3329506, y: 0.49213403, z: 1}
+  m_Center: {x: 0.04548073, y: 0.011370212, z: 0}
