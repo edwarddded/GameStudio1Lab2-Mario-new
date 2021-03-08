@@ -50,7 +50,7 @@ public class MarioCollision : MonoBehaviour
             healthText.text = "Health X" + health.ToString();
             if (health == 0)
             {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+                SceneManager.LoadScene(2);
             }
 
             Debug.Log(other.name);
