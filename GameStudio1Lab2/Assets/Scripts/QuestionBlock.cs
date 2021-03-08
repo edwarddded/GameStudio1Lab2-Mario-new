@@ -35,7 +35,7 @@ public class QuestionBlock : MonoBehaviour
             }
 
             Instantiate(emptyBlock, transform.position, transform.rotation);
-            Destroy(gameObject);
+            Destroy(gameObject.transform.parent.gameObject);
         }
     }
 

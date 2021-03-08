@@ -12,7 +12,7 @@ public class FlagHit : MonoBehaviour
     {
         if (other.gameObject.tag == "Mario")
         {
-            animator.SetBool("IsHitting", true);
+            animator.SetBool("isHitting", true);
             flagsource.clip = flag;
             flagsource.Play();
         }

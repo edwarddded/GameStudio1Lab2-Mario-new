@@ -14,7 +14,6 @@ public class MarioCollision : MonoBehaviour
     public Text healthText;
 
     public Text CoinText;
-    float value = 200;
     float Coinscore = 0;
 
      public AudioSource CoinPlay;
@@ -31,9 +30,9 @@ public class MarioCollision : MonoBehaviour
         if (other.gameObject.tag == "Coin")
         {
             Destroy(other.gameObject);
-            Coinscore += value;
+            Coinscore++;
 
-            CoinText.text = "Coin Score:" + Coinscore.ToString();
+            CoinText.text = "Coin X" + Coinscore.ToString();
 
             CoinPlay.Play();
             Debug.Log(Coinscore);
