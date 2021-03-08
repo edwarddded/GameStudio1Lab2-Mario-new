@@ -20,7 +20,7 @@ public class UI : MonoBehaviour
     }
     public void LoadFirstLevel()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
     }
 
 }
