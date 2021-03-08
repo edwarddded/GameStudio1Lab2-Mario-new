@@ -5,6 +5,14 @@ TagManager:
   serializedVersion: 2
   tags:
   - Mario
+  - Enemy
+  - Coin
+  - Mushroom
+  - Ground
+  - Star
+  - Black
+  - Hit
+  - Win
   layers:
   - Default
   - TransparentFX
