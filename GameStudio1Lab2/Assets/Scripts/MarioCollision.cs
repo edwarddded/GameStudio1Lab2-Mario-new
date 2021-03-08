@@ -59,5 +59,9 @@ public class MarioCollision : MonoBehaviour
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
+        if (other.gameObject.tag == "Win")
+        {
+            SceneManager.LoadScene(3);
+        }
     }
 }
